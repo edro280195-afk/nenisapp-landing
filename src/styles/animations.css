@@ -1,0 +1,350 @@
+/* ============================================
+   NENI'S APP — Animations & Parallax
+   ============================================ */
+
+/* --- Floating Animation --- */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(2deg); }
+}
+
+@keyframes float-reverse {
+  0%, 100% { transform: translateY(-12px); }
+  50% { transform: translateY(0); }
+}
+
+/* --- Sparkle / Pulse --- */
+@keyframes sparkle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 107, 157, 0.4); }
+  50% { box-shadow: 0 0 0 12px rgba(255, 107, 157, 0); }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+/* --- Gradient Shift --- */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* --- Rotate --- */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* --- Bounce In --- */
+@keyframes bounce-in {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* --- Slide In --- */
+@keyframes slide-up {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slide-in-left {
+  from { transform: translateX(-50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slide-in-right {
+  from { transform: translateX(50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* --- Fade In --- */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* --- Counter Roll --- */
+@keyframes count-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Background particles --- */
+@keyframes drift {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(10px, -15px) rotate(90deg); }
+  50% { transform: translate(-5px, -25px) rotate(180deg); }
+  75% { transform: translate(-15px, -10px) rotate(270deg); }
+  100% { transform: translate(0, 0) rotate(360deg); }
+}
+
+/* --- Application of Animations --- */
+
+/* Hero phone float */
+.hero__phone {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Floating notification elements */
+.floating-el--1 {
+  animation: float-slow 5s ease-in-out infinite;
+  animation-delay: 0s;
+}
+
+.floating-el--2 {
+  animation: float-reverse 4.5s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+.floating-el--3 {
+  animation: float-slow 5.5s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+/* CTA button glow pulse */
+.btn--primary {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.btn--primary:hover {
+  animation: none;
+}
+
+/* Gradient background animation */
+.cta-final {
+  background-size: 200% 200%;
+  animation: gradient-shift 6s ease infinite;
+}
+
+/* --- Decorative particles --- */
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.particle--pink {
+  background: var(--pink-300);
+}
+
+.particle--purple {
+  background: var(--purple-300);
+}
+
+.particle--1 {
+  width: 8px;
+  height: 8px;
+  top: 20%;
+  left: 10%;
+  animation: drift 12s ease-in-out infinite;
+}
+
+.particle--2 {
+  width: 12px;
+  height: 12px;
+  top: 60%;
+  left: 85%;
+  animation: drift 15s ease-in-out infinite reverse;
+}
+
+.particle--3 {
+  width: 6px;
+  height: 6px;
+  top: 40%;
+  left: 30%;
+  animation: drift 10s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.particle--4 {
+  width: 10px;
+  height: 10px;
+  top: 80%;
+  left: 60%;
+  animation: drift 14s ease-in-out infinite reverse;
+  animation-delay: 1s;
+}
+
+.particle--5 {
+  width: 5px;
+  height: 5px;
+  top: 10%;
+  left: 70%;
+  animation: drift 11s ease-in-out infinite;
+  animation-delay: 3s;
+}
+
+.particle--6 {
+  width: 7px;
+  height: 7px;
+  top: 75%;
+  left: 15%;
+  animation: drift 13s ease-in-out infinite reverse;
+  animation-delay: 0.5s;
+}
+
+/* --- Sparkle decorations --- */
+.sparkle-deco {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.sparkle-deco svg {
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+.sparkle-deco--1 {
+  top: 15%;
+  right: 15%;
+}
+
+.sparkle-deco--1 svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--pink-300);
+  animation-delay: 0s;
+}
+
+.sparkle-deco--2 {
+  bottom: 25%;
+  left: 8%;
+}
+
+.sparkle-deco--2 svg {
+  width: 14px;
+  height: 14px;
+  fill: var(--purple-300);
+  animation-delay: 1s;
+}
+
+.sparkle-deco--3 {
+  top: 45%;
+  left: 3%;
+}
+
+.sparkle-deco--3 svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--pink-400);
+  animation-delay: 0.5s;
+}
+
+/* --- Hero entry animations --- */
+.hero__content {
+  animation: slide-up 0.8s ease-out both;
+  animation-delay: 0.2s;
+}
+
+.hero__visual {
+  animation: slide-up 0.8s ease-out both;
+  animation-delay: 0.5s;
+}
+
+/* --- Highlight phone in dark section --- */
+.highlight__phone {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* --- Pricing card hover shine effect --- */
+.pricing-card::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent 40%,
+    rgba(255, 107, 157, 0.03) 50%,
+    transparent 60%
+  );
+  transform: translateX(-100%);
+  transition: 0.6s ease;
+  pointer-events: none;
+}
+
+.pricing-card:hover::after {
+  transform: translateX(100%);
+}
+
+/* --- Feature card icon bounce on hover --- */
+.feature-card:hover .feature-card__icon {
+  animation: bounce-in 0.5s ease both;
+}
+
+/* --- Nav link underline animation --- */
+@keyframes underline-grow {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* --- Smooth scroll indicator --- */
+@keyframes scroll-hint {
+  0% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(8px); opacity: 0.3; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: var(--space-xl);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--gray-400);
+  font-size: 0.8rem;
+  animation: scroll-hint 2s ease-in-out infinite;
+  z-index: 5;
+}
+
+.scroll-indicator__icon {
+  font-size: 1.2rem;
+}
+
+/* --- Reduce motion for accessibility --- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale {
+    opacity: 1;
+    transform: none;
+  }
+}
