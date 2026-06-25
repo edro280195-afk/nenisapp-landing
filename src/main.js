@@ -84,6 +84,7 @@ const translations = {
     'footer.legal': 'Legal',
     'footer.contact': 'Contacto',
     'footer.terms': 'Términos de Uso',
+    'footer.deletion': 'Eliminación de Datos',
     'footer.rights': 'Todos los derechos reservados.',
   },
   en: {
@@ -165,6 +166,7 @@ const translations = {
     'footer.legal': 'Legal',
     'footer.contact': 'Contact',
     'footer.terms': 'Terms of Use',
+    'footer.deletion': 'Data Deletion',
     'footer.rights': 'All rights reserved.',
   },
 };

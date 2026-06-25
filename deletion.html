@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eliminación de Datos — Neni's App</title>
+  <meta name="description" content="Instrucciones para solicitar la eliminación de tus datos personales e información de cuenta en Neni's App." />
+  <link rel="icon" type="image/png" href="/images/logo.png" />
+  <link rel="stylesheet" href="/src/styles/index.css" />
+  <link rel="stylesheet" href="/src/styles/animations.css" />
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="/" class="navbar__logo">
+        <img src="/images/logo.png" alt="Neni's App Logo" />
+        <span>Neni<span class="logo-accent">'s</span> App</span>
+      </a>
+
+      <ul class="navbar__menu" id="navMenu">
+        <li><a href="/#features" class="navbar__link" data-i18n="nav.features">Funciones</a></li>
+        <li><a href="/#pricing" class="navbar__link" data-i18n="nav.pricing">Precios</a></li>
+        <li><a href="/#download" class="navbar__link" data-i18n="nav.download">Descargar</a></li>
+        <li><a href="/privacy.html" class="navbar__link" data-i18n="nav.privacy">Privacidad</a></li>
+      </ul>
+
+      <div class="navbar__actions">
+        <div class="lang-toggle" id="langToggle">
+          <button class="lang-toggle__btn active" data-lang="es">ES</button>
+          <button class="lang-toggle__btn" data-lang="en">EN</button>
+        </div>
+        <a href="/#download" class="btn btn--primary btn--sm" data-i18n="nav.cta">Descargar</a>
+        <div class="navbar__hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== DELETION CONTENT ===== -->
+  <main class="deletion-page">
+    <div class="container">
+      <!-- Spanish Version -->
+      <div id="deletion-es">
+        <h1>Instrucciones para la Eliminación de Datos</h1>
+        <p class="privacy-updated">Última actualización: 25 de junio de 2026</p>
+
+        <p>En <strong>Neni's App</strong> valoramos tu privacidad y el control de tus datos personales. De conformidad con las políticas de plataformas externas como Facebook y las leyes de protección de datos aplicables, te proporcionamos instrucciones claras para solicitar la eliminación de tu cuenta y de toda la información asociada a ella.</p>
+
+        <h2>¿Qué datos se eliminan?</h2>
+        <p>Al procesar una solicitud de eliminación de datos, eliminamos de forma permanente:</p>
+        <ul>
+          <li><strong>Información de tu cuenta:</strong> Nombre, correo electrónico, número de teléfono y credenciales de acceso.</li>
+          <li><strong>Enlaces con redes sociales:</strong> Cualquier vinculación con tu cuenta de Facebook o integraciones externas de inicio de sesión.</li>
+          <li><strong>Datos de tu negocio:</strong> Catálogo de productos, información de clientas, historial de pedidos, entregas registradas, tandas, rifas, finanzas e información de proveedores.</li>
+        </ul>
+
+        <h2>Métodos para solicitar la eliminación de datos</h2>
+
+        <h3>Método 1: Desde la Aplicación Móvil (Recomendado y Automático)</h3>
+        <p>El método más rápido y sencillo para eliminar tu cuenta y todos tus datos es hacerlo directamente desde la aplicación:</p>
+        <ol style="margin-bottom: var(--space-md); padding-left: var(--space-lg); list-style: decimal; color: var(--text-light);">
+          <li style="margin-bottom: var(--space-xs);">Abre <strong>Neni's App</strong> en tu dispositivo e inicia sesión.</li>
+          <li style="margin-bottom: var(--space-xs);">Ve a la pestaña de tu <strong>Perfil</strong> (esquina inferior derecha).</li>
+          <li style="margin-bottom: var(--space-xs);">Selecciona la opción de <strong>Configuración</strong> o <strong>Ajustes de Cuenta</strong>.</li>
+          <li style="margin-bottom: var(--space-xs);">Toca en <strong>Eliminar Cuenta</strong>.</li>
+          <li style="margin-bottom: var(--space-xs);">Confirma la acción. Una vez confirmada, tu cuenta y todos tus datos comerciales serán eliminados de manera inmediata y permanente de nuestros servidores activos.</li>
+        </ol>
+
+        <h3>Método 2: Solicitud por Correo Electrónico</h3>
+        <p>Si no tienes acceso a la aplicación móvil o prefieres solicitar la eliminación de forma manual, puedes hacerlo a través de correo electrónico:</p>
+        <ol style="margin-bottom: var(--space-md); padding-left: var(--space-lg); list-style: decimal; color: var(--text-light);">
+          <li style="margin-bottom: var(--space-xs);">Envía un correo electrónico a: <a href="mailto:hola@nenisapp.com" style="color: var(--pink-500); font-weight: 500;">hola@nenisapp.com</a>.</li>
+          <li style="margin-bottom: var(--space-xs);">Usa como asunto del mensaje: <strong>Solicitud de Eliminación de Datos / Derechos ARCO</strong>.</li>
+          <li style="margin-bottom: var(--space-xs);">Proporciona el nombre completo y el correo electrónico con el que te registraste en la Aplicación para poder identificar tu cuenta.</li>
+        </ol>
+        <p>Procesaremos tu solicitud y confirmaremos la eliminación total de tus datos en un plazo no mayor a 5 días hábiles.</p>
+
+        <h2>Información Importante</h2>
+        <p>Por favor ten en cuenta que la eliminación es irreversible. Una vez completado el proceso, no será posible recuperar ningún historial de ventas, base de datos de clientas o configuraciones de tu negocio. Si tienes una suscripción activa facturada a través de Apple App Store o Google Play Store, deberás cancelarla manualmente en la configuración de suscripciones de tu dispositivo para evitar futuros cargos.</p>
+      </div>
+
+      <!-- English Version (hidden by default) -->
+      <div id="deletion-en" style="display: none;">
+        <h1>Data Deletion Instructions</h1>
+        <p class="privacy-updated">Last updated: June 25, 2026</p>
+
+        <p>At <strong>Neni's App</strong>, we value your privacy and the control over your personal data. In compliance with the policies of external platforms like Facebook and applicable data protection laws, we provide clear instructions to request the deletion of your account and all information associated with it.</p>
+
+        <h2>What data is deleted?</h2>
+        <p>Upon processing a data deletion request, we permanently delete:</p>
+        <ul>
+          <li><strong>Your account information:</strong> Name, email address, phone number, and access credentials.</li>
+          <li><strong>Social media links:</strong> Any link with your Facebook account or external login integrations.</li>
+          <li><strong>Your business data:</strong> Product catalog, client information, order history, scheduled deliveries, savings groups, raffles, finances, and supplier information.</li>
+        </ul>
+
+        <h2>Methods to request data deletion</h2>
+
+        <h3>Method 1: From the Mobile App (Recommended & Instant)</h3>
+        <p>The fastest and easiest way to delete your account and all your data is to do it directly from the app:</p>
+        <ol style="margin-bottom: var(--space-md); padding-left: var(--space-lg); list-style: decimal; color: var(--text-light);">
+          <li style="margin-bottom: var(--space-xs);">Open <strong>Neni's App</strong> on your device and log in.</li>
+          <li style="margin-bottom: var(--space-xs);">Go to your <strong>Profile</strong> tab (bottom right corner).</li>
+          <li style="margin-bottom: var(--space-xs);">Select <strong>Settings</strong> or <strong>Account Settings</strong>.</li>
+          <li style="margin-bottom: var(--space-xs);">Tap on <strong>Delete Account</strong>.</li>
+          <li style="margin-bottom: var(--space-xs);">Confirm the action. Once confirmed, your account and all business data will be immediately and permanently deleted from our active servers.</li>
+        </ol>
+
+        <h3>Method 2: Email Request</h3>
+        <p>If you do not have access to the mobile app or prefer to request deletion manually, you can do so via email:</p>
+        <ol style="margin-bottom: var(--space-md); padding-left: var(--space-lg); list-style: decimal; color: var(--text-light);">
+          <li style="margin-bottom: var(--space-xs);">Send an email to: <a href="mailto:hola@nenisapp.com" style="color: var(--pink-500); font-weight: 500;">hola@nenisapp.com</a>.</li>
+          <li style="margin-bottom: var(--space-xs);">Use the email subject: <strong>Data Deletion Request</strong>.</li>
+          <li style="margin-bottom: var(--space-xs);">Provide the full name and email address you registered with in the Application to help us identify your account.</li>
+        </ol>
+        <p>We will process your request and confirm the complete deletion of your data within 5 business days.</p>
+
+        <h2>Important Information</h2>
+        <p>Please note that deletion is irreversible. Once the process is complete, it will not be possible to recover any sales history, client databases, or business settings. If you have an active subscription billed through the Apple App Store or Google Play Store, you must manually cancel it in your device's subscription settings to avoid future charges.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" style="margin-top: var(--space-3xl);">
+    <div class="container">
+      <div class="footer__bottom" style="border-top: none; padding-top: 0;">
+        <span>© 2026 Neni's App. <span data-i18n="footer.rights">Todos los derechos reservados.</span></span>
+        <div class="footer__bottom-links" style="display: flex; gap: var(--space-md); flex-wrap: wrap;">
+          <a href="/" data-i18n="footer.back" style="color: var(--pink-400); margin-right: var(--space-md);">← Volver al inicio</a>
+          <a href="/privacy.html" data-i18n="nav.privacy">Política de Privacidad</a>
+          <a href="/terms.html" data-i18n="footer.terms">Términos de Uso</a>
+          <a href="/deletion.html" data-i18n="footer.deletion">Eliminación de Datos</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/deletion.js"></script>
+</body>
+</html>
