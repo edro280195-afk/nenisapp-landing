@@ -32,8 +32,9 @@ const translations = {
     'features.clients.desc': 'Identifica a tus clientas nuevas y frecuentes. Historial de compras, preferencias y datos de contacto organizados.',
     'features.delivery.title': 'Días de Entrega',
     'features.delivery.desc': 'Planifica y organiza tus rutas de entrega. Agenda fechas, horarios y puntos de encuentro sin perder detalle.',
-    'features.tandas.title': 'Tandas Ilimitadas',
-    'features.tandas.desc': 'Administra todas tus tandas sin límite. Controla pagos, turnos, participantes y cobros desde un solo lugar.',
+    'features.tandas.title': 'Motor #1 de Tandas 🇲🇽',
+    'features.tandas.desc': 'Tandas de productos y dinero ilimitadas. Sorteo de números en vivo, cobro por WhatsApp en 1-clic y entregas en ruta automáticas.',
+
     'features.rifas.title': 'Rifas',
     'features.rifas.desc': 'Crea rifas para tus seguidoras. Define boletos, premios, participantes y sorteo automático. ¡Más engagement!',
     'features.finance.title': 'Finanzas Completas',

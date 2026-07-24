@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="/src/styles/animations.css" />
 </head>
 <body>
-  <!-- ===== NAVBAR ===== -->
   <nav class="navbar scrolled" id="navbar">
     <div class="container">
       <a href="/" class="navbar__logo">
@@ -38,92 +37,116 @@
     </div>
   </nav>
 
-  <!-- ===== DELETION CONTENT ===== -->
   <main class="deletion-page">
     <div class="container">
-      <!-- Spanish Version -->
       <div id="deletion-es">
         <h1>Instrucciones para la Eliminación de Datos</h1>
-        <p class="privacy-updated">Última actualización: 25 de junio de 2026</p>
+        <p class="privacy-updated">Versión 2026-07-08 · Última actualización: 8 de julio de 2026</p>
 
-        <p>En <strong>Neni's App</strong> valoramos tu privacidad y el control de tus datos personales. De conformidad con las políticas de plataformas externas como Facebook y las leyes de protección de datos aplicables, te proporcionamos instrucciones claras para solicitar la eliminación de tu cuenta y de toda la información asociada a ella.</p>
+        <p>En <strong>Neni's App</strong> puedes solicitar la eliminación o cancelación de tus datos personales. Actualmente el método formal disponible es por correo electrónico; la app todavía no cuenta con un botón automático de eliminación completa de cuenta.</p>
 
-        <h2>¿Qué datos se eliminan?</h2>
-        <p>Al procesar una solicitud de eliminación de datos, eliminamos de forma permanente:</p>
+        <h2>1. Cómo solicitar la eliminación</h2>
+        <ol style="margin-bottom: var(--space-md); padding-left: var(--space-lg); list-style: decimal; color: var(--text-light);">
+          <li style="margin-bottom: var(--space-xs);">Envía un correo a <a href="mailto:hola@nenisapp.com" style="color: var(--pink-500); font-weight: 500;">hola@nenisapp.com</a>.</li>
+          <li style="margin-bottom: var(--space-xs);">Usa el asunto <strong>Solicitud de Eliminación de Datos</strong> o <strong>Derechos ARCO</strong>.</li>
+          <li style="margin-bottom: var(--space-xs);">Incluye tu nombre completo, correo y teléfono de registro.</li>
+          <li style="margin-bottom: var(--space-xs);">Indica si quieres eliminar una cuenta de clienta, vendedora, equipo, chofer o una vinculación con Facebook Login.</li>
+          <li style="margin-bottom: var(--space-xs);">Describe si deseas eliminar toda la cuenta o solo ciertos datos, por ejemplo teléfono, dirección, datos de pedido o vinculación con Facebook.</li>
+        </ol>
+
+        <h2>2. Verificación de identidad</h2>
+        <p>Antes de eliminar o entregar información, podemos pedir datos adicionales razonables para confirmar que eres la persona titular de la cuenta o que tienes autorización para solicitarlo. Esto evita que alguien elimine datos de otra persona sin permiso.</p>
+
+        <h2>3. Qué datos se eliminan o desactivan</h2>
+        <p>Según tu rol y solicitud, podemos eliminar, anonimizar o desactivar:</p>
         <ul>
-          <li><strong>Información de tu cuenta:</strong> Nombre, correo electrónico, número de teléfono y credenciales de acceso.</li>
-          <li><strong>Enlaces con redes sociales:</strong> Cualquier vinculación con tu cuenta de Facebook o integraciones externas de inicio de sesión.</li>
-          <li><strong>Datos de tu negocio:</strong> Catálogo de productos, información de clientas, historial de pedidos, entregas registradas, tandas, rifas, finanzas e información de proveedores.</li>
+          <li>Datos de cuenta: nombre, correo, teléfono, contraseña, sesión y vinculación con Facebook Login.</li>
+          <li>Datos de clienta: direcciones, referencias, pedidos, tracking, puntos, reservas y comunicación asociada.</li>
+          <li>Datos de vendedora: negocio, catálogo, pedidos, clientas, equipo, rutas, cobros, evidencias, tandas, rifas y configuración.</li>
+          <li>Datos de equipo o chofer: permisos, historial operativo, rutas, ubicación operativa y evidencias de entrega.</li>
+          <li>Tokens de notificación, tokens de sesión, enlaces o identificadores que ya no sean necesarios.</li>
         </ul>
 
-        <h2>Métodos para solicitar la eliminación de datos</h2>
+        <h2>4. Datos que pueden conservarse</h2>
+        <p>No siempre es posible borrar todo de inmediato. Podemos conservar información cuando sea necesario para:</p>
+        <ul>
+          <li>Cumplir obligaciones legales, fiscales, contables o regulatorias.</li>
+          <li>Prevenir fraude, abuso, contracargos, disputas o accesos no autorizados.</li>
+          <li>Conservar evidencia de pedidos, pagos, entregas o soporte durante un periodo razonable.</li>
+          <li>Proteger derechos de Neni's App, usuarias, clientas, vendedoras o terceros.</li>
+          <li>Mantener respaldos técnicos hasta que se cumpla su ciclo normal de rotación.</li>
+        </ul>
+        <p>Cuando no podamos eliminar un dato de inmediato, te explicaremos la razón en la respuesta, salvo que la ley nos lo impida.</p>
 
-        <h3>Método 1: Desde la Aplicación Móvil (Recomendado y Automático)</h3>
-        <p>El método más rápido y sencillo para eliminar tu cuenta y todos tus datos es hacerlo directamente desde la aplicación:</p>
-        <ol style="margin-bottom: var(--space-md); padding-left: var(--space-lg); list-style: decimal; color: var(--text-light);">
-          <li style="margin-bottom: var(--space-xs);">Abre <strong>Neni's App</strong> en tu dispositivo e inicia sesión.</li>
-          <li style="margin-bottom: var(--space-xs);">Ve a la pestaña de tu <strong>Perfil</strong> (esquina inferior derecha).</li>
-          <li style="margin-bottom: var(--space-xs);">Selecciona la opción de <strong>Configuración</strong> o <strong>Ajustes de Cuenta</strong>.</li>
-          <li style="margin-bottom: var(--space-xs);">Toca en <strong>Eliminar Cuenta</strong>.</li>
-          <li style="margin-bottom: var(--space-xs);">Confirma la acción. Una vez confirmada, tu cuenta y todos tus datos comerciales serán eliminados de manera inmediata y permanente de nuestros servidores activos.</li>
-        </ol>
+        <h2>5. Plazos de respuesta</h2>
+        <p>Confirmaremos la recepción de tu solicitud y responderemos conforme a los plazos previstos por la legislación aplicable. Si tu solicitud es compleja, involucra datos de un negocio administrado por otra vendedora o requiere verificación adicional, podríamos pedir información antes de completarla.</p>
 
-        <h3>Método 2: Solicitud por Correo Electrónico</h3>
-        <p>Si no tienes acceso a la aplicación móvil o prefieres solicitar la eliminación de forma manual, puedes hacerlo a través de correo electrónico:</p>
-        <ol style="margin-bottom: var(--space-md); padding-left: var(--space-lg); list-style: decimal; color: var(--text-light);">
-          <li style="margin-bottom: var(--space-xs);">Envía un correo electrónico a: <a href="mailto:hola@nenisapp.com" style="color: var(--pink-500); font-weight: 500;">hola@nenisapp.com</a>.</li>
-          <li style="margin-bottom: var(--space-xs);">Usa como asunto del mensaje: <strong>Solicitud de Eliminación de Datos / Derechos ARCO</strong>.</li>
-          <li style="margin-bottom: var(--space-xs);">Proporciona el nombre completo y el correo electrónico con el que te registraste en la Aplicación para poder identificar tu cuenta.</li>
-        </ol>
-        <p>Procesaremos tu solicitud y confirmaremos la eliminación total de tus datos en un plazo no mayor a 5 días hábiles.</p>
+        <h2>6. Facebook Login</h2>
+        <p>Si usaste Facebook Login y quieres eliminar la vinculación con Facebook, escribe a <a href="mailto:hola@nenisapp.com" style="color: var(--pink-500); font-weight: 500;">hola@nenisapp.com</a> con el asunto <strong>Eliminar Facebook Login</strong>. Eliminaremos o desvincularemos los identificadores de Facebook asociados a tu cuenta cuando corresponda, sujeto a verificación y retención aplicable.</p>
 
-        <h2>Información Importante</h2>
-        <p>Por favor ten en cuenta que la eliminación es irreversible. Una vez completado el proceso, no será posible recuperar ningún historial de ventas, base de datos de clientas o configuraciones de tu negocio. Si tienes una suscripción activa facturada a través de Apple App Store o Google Play Store, deberás cancelarla manualmente en la configuración de suscripciones de tu dispositivo para evitar futuros cargos.</p>
+        <h2>7. Suscripciones y pagos externos</h2>
+        <p>Eliminar tu cuenta en Neni's App no cancela automáticamente suscripciones, cargos o cuentas administradas por Apple, Google Play, Mercado Pago u otros procesadores externos. Debes gestionarlos directamente con el proveedor correspondiente cuando aplique.</p>
+
+        <h2>8. Contacto</h2>
+        <p>Correo de privacidad y eliminación: <a href="mailto:hola@nenisapp.com" style="color: var(--pink-500); font-weight: 500;">hola@nenisapp.com</a>.</p>
+        <p>Estas instrucciones son una base operativa y deben revisarse con asesoría legal antes de producción.</p>
       </div>
 
-      <!-- English Version (hidden by default) -->
       <div id="deletion-en" style="display: none;">
         <h1>Data Deletion Instructions</h1>
-        <p class="privacy-updated">Last updated: June 25, 2026</p>
+        <p class="privacy-updated">Version 2026-07-08 · Last updated: July 8, 2026</p>
 
-        <p>At <strong>Neni's App</strong>, we value your privacy and the control over your personal data. In compliance with the policies of external platforms like Facebook and applicable data protection laws, we provide clear instructions to request the deletion of your account and all information associated with it.</p>
+        <p>At <strong>Neni's App</strong>, you may request deletion or cancellation of your personal data. The currently available formal method is email; the app does not yet include an automatic full account deletion button.</p>
 
-        <h2>What data is deleted?</h2>
-        <p>Upon processing a data deletion request, we permanently delete:</p>
+        <h2>1. How to request deletion</h2>
+        <ol style="margin-bottom: var(--space-md); padding-left: var(--space-lg); list-style: decimal; color: var(--text-light);">
+          <li style="margin-bottom: var(--space-xs);">Send an email to <a href="mailto:hola@nenisapp.com" style="color: var(--pink-500); font-weight: 500;">hola@nenisapp.com</a>.</li>
+          <li style="margin-bottom: var(--space-xs);">Use the subject <strong>Data Deletion Request</strong> or <strong>Data Rights</strong>.</li>
+          <li style="margin-bottom: var(--space-xs);">Include your full name, registered email, and registered phone number.</li>
+          <li style="margin-bottom: var(--space-xs);">Tell us whether you want to delete a customer, seller, team, driver account, or a Facebook Login connection.</li>
+          <li style="margin-bottom: var(--space-xs);">Describe whether you want to delete the entire account or only certain data, such as phone, address, order data, or Facebook connection.</li>
+        </ol>
+
+        <h2>2. Identity verification</h2>
+        <p>Before deleting or disclosing information, we may request reasonable additional data to confirm that you are the account holder or authorized to make the request. This prevents someone from deleting another person's data without permission.</p>
+
+        <h2>3. What data may be deleted or disabled</h2>
+        <p>Depending on your role and request, we may delete, anonymize, or disable:</p>
         <ul>
-          <li><strong>Your account information:</strong> Name, email address, phone number, and access credentials.</li>
-          <li><strong>Social media links:</strong> Any link with your Facebook account or external login integrations.</li>
-          <li><strong>Your business data:</strong> Product catalog, client information, order history, scheduled deliveries, savings groups, raffles, finances, and supplier information.</li>
+          <li>Account data: name, email, phone, password, session, and Facebook Login connection.</li>
+          <li>Customer data: addresses, references, orders, tracking, points, reservations, and related communication.</li>
+          <li>Seller data: business, catalog, orders, customers, team, routes, charges, evidence, savings groups, raffles, and settings.</li>
+          <li>Team or driver data: permissions, operational history, routes, operational location, and delivery evidence.</li>
+          <li>Notification tokens, session tokens, links, or identifiers that are no longer needed.</li>
         </ul>
 
-        <h2>Methods to request data deletion</h2>
+        <h2>4. Data that may be retained</h2>
+        <p>It is not always possible to delete everything immediately. We may retain information when necessary to:</p>
+        <ul>
+          <li>Comply with legal, tax, accounting, or regulatory obligations.</li>
+          <li>Prevent fraud, abuse, chargebacks, disputes, or unauthorized access.</li>
+          <li>Keep evidence of orders, payments, deliveries, or support for a reasonable period.</li>
+          <li>Protect the rights of Neni's App, users, customers, sellers, or third parties.</li>
+          <li>Maintain technical backups until their normal rotation cycle is completed.</li>
+        </ul>
+        <p>When we cannot delete data immediately, we will explain the reason in our response unless the law prevents us from doing so.</p>
 
-        <h3>Method 1: From the Mobile App (Recommended & Instant)</h3>
-        <p>The fastest and easiest way to delete your account and all your data is to do it directly from the app:</p>
-        <ol style="margin-bottom: var(--space-md); padding-left: var(--space-lg); list-style: decimal; color: var(--text-light);">
-          <li style="margin-bottom: var(--space-xs);">Open <strong>Neni's App</strong> on your device and log in.</li>
-          <li style="margin-bottom: var(--space-xs);">Go to your <strong>Profile</strong> tab (bottom right corner).</li>
-          <li style="margin-bottom: var(--space-xs);">Select <strong>Settings</strong> or <strong>Account Settings</strong>.</li>
-          <li style="margin-bottom: var(--space-xs);">Tap on <strong>Delete Account</strong>.</li>
-          <li style="margin-bottom: var(--space-xs);">Confirm the action. Once confirmed, your account and all business data will be immediately and permanently deleted from our active servers.</li>
-        </ol>
+        <h2>5. Response timing</h2>
+        <p>We will confirm receipt of your request and respond within the timeframes required by applicable law. If your request is complex, involves data from a business managed by another seller, or requires additional verification, we may ask for information before completing it.</p>
 
-        <h3>Method 2: Email Request</h3>
-        <p>If you do not have access to the mobile app or prefer to request deletion manually, you can do so via email:</p>
-        <ol style="margin-bottom: var(--space-md); padding-left: var(--space-lg); list-style: decimal; color: var(--text-light);">
-          <li style="margin-bottom: var(--space-xs);">Send an email to: <a href="mailto:hola@nenisapp.com" style="color: var(--pink-500); font-weight: 500;">hola@nenisapp.com</a>.</li>
-          <li style="margin-bottom: var(--space-xs);">Use the email subject: <strong>Data Deletion Request</strong>.</li>
-          <li style="margin-bottom: var(--space-xs);">Provide the full name and email address you registered with in the Application to help us identify your account.</li>
-        </ol>
-        <p>We will process your request and confirm the complete deletion of your data within 5 business days.</p>
+        <h2>6. Facebook Login</h2>
+        <p>If you used Facebook Login and want to remove the Facebook connection, contact <a href="mailto:hola@nenisapp.com" style="color: var(--pink-500); font-weight: 500;">hola@nenisapp.com</a> with the subject <strong>Remove Facebook Login</strong>. We will delete or disconnect Facebook identifiers associated with your account where applicable, subject to verification and applicable retention.</p>
 
-        <h2>Important Information</h2>
-        <p>Please note that deletion is irreversible. Once the process is complete, it will not be possible to recover any sales history, client databases, or business settings. If you have an active subscription billed through the Apple App Store or Google Play Store, you must manually cancel it in your device's subscription settings to avoid future charges.</p>
+        <h2>7. External subscriptions and payments</h2>
+        <p>Deleting your Neni's App account does not automatically cancel subscriptions, charges, or accounts managed by Apple, Google Play, Mercado Pago, or other external processors. You must manage those directly with the corresponding provider where applicable.</p>
+
+        <h2>8. Contact</h2>
+        <p>Privacy and deletion email: <a href="mailto:hola@nenisapp.com" style="color: var(--pink-500); font-weight: 500;">hola@nenisapp.com</a>.</p>
+        <p>These instructions are an operational base and should be reviewed by legal counsel before production.</p>
       </div>
     </div>
   </main>
 
-  <!-- ===== FOOTER ===== -->
   <footer class="footer" style="margin-top: var(--space-3xl);">
     <div class="container">
       <div class="footer__bottom" style="border-top: none; padding-top: 0;">
