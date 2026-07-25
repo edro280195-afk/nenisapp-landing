@@ -135,21 +135,12 @@ button {
 .site-brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  color: var(--ink);
-  font-size: 1.25rem;
-  font-weight: 800;
-  letter-spacing: -0.04em;
 }
 
 .site-brand img {
-  width: 42px;
-  height: 42px;
+  width: 148px;
+  height: auto;
   object-fit: contain;
-}
-
-.site-brand > span > span {
-  color: var(--pink);
 }
 
 .main-nav {
@@ -1437,20 +1428,12 @@ button {
 .navbar__logo {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  font-size: 1.05rem;
-  font-weight: 800;
-  letter-spacing: -0.04em;
 }
 
 .navbar__logo img {
-  width: 42px;
-  height: 42px;
+  width: 148px;
+  height: auto;
   object-fit: contain;
-}
-
-.logo-accent {
-  color: var(--pink);
 }
 
 .navbar__menu {
@@ -2030,14 +2013,10 @@ button {
     padding-block: 7px;
   }
 
-  .site-brand {
-    font-size: 1.05rem;
-  }
-
   .site-brand img,
   .navbar__logo img {
-    width: 36px;
-    height: 36px;
+    width: 132px;
+    height: auto;
   }
 
   .menu-toggle {
