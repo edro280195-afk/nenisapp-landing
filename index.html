@@ -5,397 +5,490 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Neni's App organiza pedidos, rutas, clientas, tienda, pagos, tandas, rifas e inventario para emprendedoras que venden por redes sociales."
+      content="Neni's App reúne pedidos, clientas, cobros, tandas y repartos para que tu negocio siga en orden después de cada venta en vivo."
     />
-    <meta name="theme-color" content="#fff7f9" />
-    <title>Neni's App | Control real para ventas por redes</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#fff7fa" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Neni's App | Tu live termina, tu negocio sigue en orden" />
+    <meta
+      property="og:description"
+      content="Controla pedidos, clientas, cobros, tandas y rutas desde una sola app."
+    />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:url" content="https://nenisapp.com/" />
+    <meta property="og:image" content="https://nenisapp.com/og.png" />
+    <meta property="og:image:alt" content="Neni's App, tu live termina y tu negocio sigue en orden" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://nenisapp.com/og.png" />
+    <link rel="canonical" href="https://nenisapp.com/" />
+    <title>Neni's App | Tu live termina, tu negocio sigue en orden</title>
+    <link rel="icon" type="image/png" href="/images/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/src/styles/index.css" />
   </head>
-  <body>
+  <body class="landing-page">
     <header class="site-header" data-header>
-      <a class="brand" href="#inicio" aria-label="Ir al inicio de Neni's App">
+      <a class="site-brand" href="#inicio" aria-label="Neni's App, ir al inicio">
         <img src="/images/logo.png" alt="" />
-        <span>Neni's App</span>
+        <span>Neni's<span>.</span></span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-controls="main-navigation"
+        aria-expanded="false"
+        data-menu-toggle
+      >
         <span></span>
         <span></span>
       </button>
 
-      <nav class="main-nav" data-nav>
-        <a href="#producto">Producto</a>
-        <a href="#flujo">Flujo</a>
-        <a href="#modulos">Modulos</a>
-        <a href="#planes">Planes</a>
-        <a href="privacy.html">Privacidad</a>
+      <nav class="main-nav" id="main-navigation" data-nav>
+        <a href="#features">La app</a>
+        <a href="#flujo">Cómo funciona</a>
+        <a href="#pricing">Planes</a>
+        <a href="#roles">Para quién es</a>
       </nav>
 
-      <a class="header-cta" href="#descargar">Descargar</a>
+      <a
+        class="button button-small button-dark header-action"
+        href="mailto:hola@nenisapp.com?subject=Quiero%20probar%20Neni%27s%20App"
+      >
+        Quiero probarla
+        <span class="material-symbols-rounded" aria-hidden="true">arrow_outward</span>
+      </a>
     </header>
 
     <main>
       <section class="hero" id="inicio">
-        <div class="hero-product" aria-hidden="true">
-          <article class="app-shot app-shot-large shot-dashboard">
-            <div class="shot-top">
-              <span>Hoy</span>
-              <strong>$8,420</strong>
-            </div>
-            <h3>Panel de ventas</h3>
-            <div class="metric-grid">
-              <div><span>Pedidos</span><strong>32</strong></div>
-              <div><span>Por cobrar</span><strong>$2,180</strong></div>
-              <div><span>En ruta</span><strong>9</strong></div>
-              <div><span>Clientas</span><strong>146</strong></div>
-            </div>
-            <div class="chart-bars">
-              <span style="height: 46%"></span>
-              <span style="height: 64%"></span>
-              <span style="height: 38%"></span>
-              <span style="height: 82%"></span>
-              <span style="height: 55%"></span>
-              <span style="height: 72%"></span>
-            </div>
-            <div class="activity-row">
-              <span class="status-dot"></span>
-              <p>Pedido #1084 confirmado</p>
-              <strong>$640</strong>
-            </div>
-          </article>
-
-          <article class="app-shot app-shot-small shot-orders">
-            <div class="shot-chip">Pedidos</div>
-            <h3>Ordenes listas</h3>
-            <ul>
-              <li><span>Mariana G.</span><strong>$390</strong></li>
-              <li><span>Bere R.</span><strong>$820</strong></li>
-              <li><span>Claudia M.</span><strong>$215</strong></li>
-            </ul>
-          </article>
-
-          <article class="app-shot app-shot-small shot-route">
-            <div class="shot-chip green">Ruta</div>
-            <h3>7 entregas</h3>
-            <div class="route-line">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <p>Centro -> Cumbres -> San Pedro</p>
-          </article>
-
-          <article class="app-shot app-shot-small shot-store">
-            <div class="shot-chip amber">Tienda</div>
-            <h3>Catalogo activo</h3>
-            <div class="store-grid">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </article>
-        </div>
+        <div class="hero-ribbon ribbon-one" aria-hidden="true"></div>
+        <div class="hero-ribbon ribbon-two" aria-hidden="true"></div>
 
         <div class="hero-copy">
-          <p class="eyebrow">Ventas por Facebook, WhatsApp y lives</p>
-          <h1>Neni's App</h1>
+          <p class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Hecha para vender en vivo
+          </p>
+          <h1>
+            Tu live termina.<br />
+            Tu negocio sigue <span>en orden.</span>
+          </h1>
           <p class="hero-lead">
-            El centro de control para vender, cobrar, repartir y dar seguimiento sin vivir entre libretas,
-            capturas sueltas y mensajes perdidos.
+            Pedidos, clientas, cobros, tandas y repartos en un mismo lugar.
+            Sin volver a buscar quién pidió qué entre comentarios y libretas.
           </p>
-          <div class="hero-actions" id="descargar">
-            <a class="btn primary" href="#planes">Ver planes</a>
-            <a class="btn secondary" href="#producto">Ver el app</a>
+          <div class="hero-actions">
+            <a
+              class="button button-primary"
+              href="mailto:hola@nenisapp.com?subject=Quiero%20probar%20Neni%27s%20App"
+            >
+              Organizar mi negocio
+              <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+            </a>
+            <a class="text-link" href="#features">
+              Ver la app por dentro
+              <span class="material-symbols-rounded" aria-hidden="true">south</span>
+            </a>
           </div>
-          <div class="hero-proof">
-            <span>Pedidos</span>
-            <span>Rutas</span>
-            <span>Tandas</span>
-            <span>Rifas</span>
-            <span>Tienda</span>
+          <ul class="hero-promises" aria-label="Beneficios principales">
+            <li>
+              <span class="material-symbols-rounded" aria-hidden="true">check_circle</span>
+              Tu operación en una sola app
+            </li>
+            <li>
+              <span class="material-symbols-rounded" aria-hidden="true">check_circle</span>
+              Tus clientas también tienen su espacio
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-label="Capturas reales de Neni's App con datos de demostración">
+          <div class="hero-orbit orbit-pink" aria-hidden="true"></div>
+          <div class="hero-orbit orbit-lilac" aria-hidden="true"></div>
+          <figure class="phone-frame hero-phone-main">
+            <img
+              src="/images/app/dashboard-demo.png"
+              alt="Panel de ventas de Neni's App con métricas, gráfica y actividad reciente"
+            />
+          </figure>
+          <figure class="phone-frame hero-phone-side">
+            <img
+              src="/images/app/orders-demo.png"
+              alt="Pantalla de pedidos recibidos en Neni's App"
+            />
+          </figure>
+          <div class="hero-sticker sticker-orders">
+            <span class="material-symbols-rounded" aria-hidden="true">receipt_long</span>
+            <div>
+              <strong>12 pedidos</strong>
+              <small>listos para gestionar</small>
+            </div>
+          </div>
+          <div class="hero-sticker sticker-live">
+            <span class="live-pulse"></span>
+            <div>
+              <strong>En vivo</strong>
+              <small>vende sin perder el hilo</small>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section product-tour" id="producto">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Pantallas del producto</p>
-          <h2>Lo que realmente cubre el app</h2>
-          <p>
-            Neni's App junta el trabajo diario de una vendedora: levantar pedidos, organizar clientas,
-            armar rutas, publicar productos y controlar pagos.
-          </p>
+      <div class="marquee" aria-label="Módulos de Neni's App">
+        <div class="marquee-track">
+          <span>Pedidos</span><i></i>
+          <span>Clientas</span><i></i>
+          <span>Tandas</span><i></i>
+          <span>Repartos</span><i></i>
+          <span>Ventas en vivo</span><i></i>
+          <span>Pedidos</span><i></i>
+          <span>Clientas</span><i></i>
+          <span>Tandas</span><i></i>
+          <span>Repartos</span><i></i>
+          <span>Ventas en vivo</span><i></i>
         </div>
+      </div>
 
-        <div class="screen-stage reveal">
-          <div class="phone-shell">
-            <div class="phone-screen active" data-screen="dashboard">
-              <div class="phone-header">
-                <span>Hola, Neni</span>
-                <strong>Dashboard</strong>
-              </div>
-              <div class="summary-card coral">
-                <span>Ventas de hoy</span>
-                <strong>$8,420</strong>
-                <small>+18% vs. ayer</small>
-              </div>
-              <div class="mini-grid">
-                <div><span>Pendientes</span><strong>12</strong></div>
-                <div><span>Por cobrar</span><strong>$2,180</strong></div>
-                <div><span>Entregas</span><strong>9</strong></div>
-                <div><span>Clientas</span><strong>146</strong></div>
-              </div>
-              <div class="screen-list">
-                <div><span class="bullet pink"></span><p>Pedido #1084</p><strong>$640</strong></div>
-                <div><span class="bullet teal"></span><p>Pago recibido</p><strong>$390</strong></div>
-                <div><span class="bullet gold"></span><p>Ruta lista</p><strong>7</strong></div>
-              </div>
-            </div>
+      <section class="showcase section-shell" id="features">
+        <div class="showcase-copy reveal">
+          <p class="eyebrow">La app por dentro</p>
+          <h2>Bonita para verla. Poderosa para usarla diario.</h2>
+          <p class="section-intro">
+            Neni's App convierte el movimiento de tu negocio en información clara:
+            qué vendiste, quién falta por pagar y qué sigue por entregar.
+          </p>
 
-            <div class="phone-screen" data-screen="orders">
-              <div class="phone-header">
-                <span>Buscar por clienta, articulo o folio</span>
-                <strong>Pedidos</strong>
-              </div>
-              <div class="filter-row">
-                <span class="active">Todos</span>
-                <span>Por cobrar</span>
-                <span>En ruta</span>
-              </div>
-              <div class="order-card">
-                <div><strong>#1084 Mariana</strong><span>2 productos</span></div>
-                <em>Confirmar</em>
-                <b>$640</b>
-              </div>
-              <div class="order-card">
-                <div><strong>#1085 Bere</strong><span>Apartado tienda</span></div>
-                <em class="muted">En ruta</em>
-                <b>$820</b>
-              </div>
-              <div class="order-card">
-                <div><strong>#1086 Claudia</strong><span>Live Facebook</span></div>
-                <em class="paid">Pagado</em>
-                <b>$215</b>
-              </div>
-            </div>
-
-            <div class="phone-screen" data-screen="routes">
-              <div class="phone-header">
-                <span>Armar, compartir y cerrar</span>
-                <strong>Rutas</strong>
-              </div>
-              <div class="route-map">
-                <span class="pin one"></span>
-                <span class="pin two"></span>
-                <span class="pin three"></span>
-              </div>
-              <div class="route-stop"><strong>1. Centro</strong><span>3 entregas</span></div>
-              <div class="route-stop"><strong>2. Cumbres</strong><span>2 entregas</span></div>
-              <div class="route-stop"><strong>3. San Pedro</strong><span>2 entregas</span></div>
-            </div>
-
-            <div class="phone-screen" data-screen="store">
-              <div class="phone-header">
-                <span>Venta directa para tus clientas</span>
-                <strong>Tienda publica</strong>
-              </div>
-              <div class="store-banner">Novedades de la semana</div>
-              <div class="product-grid">
-                <div><span></span><strong>Blusa satin</strong><small>$260</small></div>
-                <div><span></span><strong>Bolsa mini</strong><small>$390</small></div>
-                <div><span></span><strong>Set accesorios</strong><small>$180</small></div>
-                <div><span></span><strong>Jeans flare</strong><small>$520</small></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="screen-tabs" role="tablist" aria-label="Pantallas de Neni's App">
-            <button class="active" type="button" data-target-screen="dashboard">
+          <div class="screen-picker" role="tablist" aria-label="Explorar pantallas de la app">
+            <button
+              class="screen-option active"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              data-target-screen="dashboard"
+            >
               <span>01</span>
-              <strong>Dashboard</strong>
-              <small>Ventas, pendientes y actividad reciente.</small>
+              <div>
+                <strong>Tu día de un vistazo</strong>
+                <small>Ventas, pendientes y actividad reciente.</small>
+              </div>
+              <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
             </button>
-            <button type="button" data-target-screen="orders">
+            <button
+              class="screen-option"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-target-screen="orders"
+            >
               <span>02</span>
-              <strong>Pedidos</strong>
-              <small>Estados, cobros, busqueda y etiquetas.</small>
+              <div>
+                <strong>Pedidos sin confusión</strong>
+                <small>Folio, artículos, pago y entrega juntos.</small>
+              </div>
+              <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
             </button>
-            <button type="button" data-target-screen="routes">
+            <button
+              class="screen-option"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-target-screen="clients"
+            >
               <span>03</span>
-              <strong>Rutas</strong>
-              <small>Arma entregas por zona y comparte seguimiento.</small>
+              <div>
+                <strong>Clientas que sí conoces</strong>
+                <small>Historial, frecuencia y seguimiento.</small>
+              </div>
+              <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
             </button>
-            <button type="button" data-target-screen="store">
+            <button
+              class="screen-option"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-target-screen="routes"
+            >
               <span>04</span>
-              <strong>Tienda</strong>
-              <small>Catalogo publico para apartados y pedidos.</small>
+              <div>
+                <strong>Entregas bien armadas</strong>
+                <small>Selecciona, prepara y comparte la ruta.</small>
+              </div>
+              <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
             </button>
+          </div>
+        </div>
+
+        <div class="device-stage reveal">
+          <div class="device-glow" aria-hidden="true"></div>
+          <div class="phone-device">
+            <div class="device-speaker" aria-hidden="true"></div>
+            <img
+              class="app-screen active"
+              data-screen="dashboard"
+              src="/images/app/dashboard-demo.png"
+              alt="Panel principal de una vendedora"
+            />
+            <img
+              class="app-screen"
+              data-screen="orders"
+              src="/images/app/orders-demo.png"
+              alt="Listado de pedidos con datos de demostración"
+            />
+            <img
+              class="app-screen"
+              data-screen="clients"
+              src="/images/app/clients-demo.png"
+              alt="Listado de clientas con métricas de demostración"
+            />
+            <img
+              class="app-screen"
+              data-screen="routes"
+              src="/images/app/routes-demo.png"
+              alt="Preparación de rutas con datos de demostración"
+            />
+          </div>
+          <p class="demo-note">
+            <span class="material-symbols-rounded" aria-hidden="true">verified_user</span>
+            Capturas reales de la app. Los nombres y cifras son ficticios.
+          </p>
+        </div>
+      </section>
+
+      <section class="workflow" id="flujo">
+        <div class="workflow-heading reveal">
+          <p class="eyebrow eyebrow-light">Del comentario a la entrega</p>
+          <h2>Tu forma de vender, con menos vueltas.</h2>
+          <p>
+            La app acompaña el pedido completo para que no tengas que reconstruir
+            la historia cada vez que una clienta pregunta.
+          </p>
+        </div>
+
+        <ol class="workflow-list">
+          <li class="reveal">
+            <span>01</span>
+            <div>
+              <h3>Registras lo que se vendió</h3>
+              <p>Clienta, artículo, precio, folio y estado quedan conectados.</p>
+            </div>
+            <span class="material-symbols-rounded" aria-hidden="true">add_shopping_cart</span>
+          </li>
+          <li class="reveal">
+            <span>02</span>
+            <div>
+              <h3>Cobras sin perder pendientes</h3>
+              <p>Sabes qué está pagado, qué falta y cuánto debes recibir.</p>
+            </div>
+            <span class="material-symbols-rounded" aria-hidden="true">payments</span>
+          </li>
+          <li class="reveal">
+            <span>03</span>
+            <div>
+              <h3>Preparas y repartes con claridad</h3>
+              <p>Armas entregas, rutas y seguimiento desde el mismo pedido.</p>
+            </div>
+            <span class="material-symbols-rounded" aria-hidden="true">local_shipping</span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="roles section-shell" id="roles">
+        <div class="role-visual reveal">
+          <figure class="login-phone login-client">
+            <img src="/images/app/login.png" alt="Acceso de clienta en Neni's App" />
+          </figure>
+          <figure class="login-phone login-seller">
+            <img src="/images/app/login-seller.png" alt="Acceso de vendedora en Neni's App" />
+          </figure>
+          <span class="role-connector" aria-hidden="true"></span>
+        </div>
+
+        <div class="roles-copy reveal">
+          <p class="eyebrow">Dos roles, una comunidad</p>
+          <h2>Tu clienta también sabe dónde encontrar todo.</h2>
+          <p class="section-intro">
+            Mientras tú organizas ventas y entregas, ella consulta pedidos, puntos,
+            tandas y tiendas. Cada una ve lo que necesita, sin sentirse invitada de segunda.
+          </p>
+          <div class="role-points">
+            <div>
+              <span class="material-symbols-rounded" aria-hidden="true">storefront</span>
+              <p><strong>Para vendedoras</strong>Control del negocio y seguimiento.</p>
+            </div>
+            <div>
+              <span class="material-symbols-rounded" aria-hidden="true">shopping_bag</span>
+              <p><strong>Para clientas</strong>Compras claras y conexión con sus tiendas.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section workflow" id="flujo">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Del live a la entrega</p>
-          <h2>Un flujo completo, sin brincar entre mil notas</h2>
+      <section class="feature-bento section-shell" aria-labelledby="everything-title">
+        <div class="bento-heading reveal">
+          <p class="eyebrow">Todo conectado</p>
+          <h2 id="everything-title">No es otra lista de pedidos. Es tu negocio completo.</h2>
         </div>
 
-        <div class="workflow-grid">
-          <article class="workflow-card reveal">
-            <span>1</span>
-            <h3>Capturas el pedido</h3>
-            <p>Producto, cantidad, precio, clienta, origen de venta y estado quedan ligados al folio.</p>
-          </article>
-          <article class="workflow-card reveal">
-            <span>2</span>
-            <h3>Cobras y confirmas</h3>
-            <p>Controlas pagos completos o parciales, metodos de pago y saldos por cobrar.</p>
-          </article>
-          <article class="workflow-card reveal">
-            <span>3</span>
-            <h3>Armas la ruta</h3>
-            <p>Agrupas entregas por zona, revisas pendientes y compartes la ruta con el equipo.</p>
-          </article>
-          <article class="workflow-card reveal">
-            <span>4</span>
-            <h3>Das seguimiento</h3>
-            <p>La clienta puede revisar su pedido, apartar productos y recibir actualizaciones.</p>
-          </article>
-        </div>
+        <article class="bento-item bento-live reveal">
+          <span class="material-symbols-rounded" aria-hidden="true">sensors</span>
+          <div>
+            <p>Ventas en vivo</p>
+            <h3>Muestra productos en la app mientras transmites.</h3>
+          </div>
+          <span class="live-badge"><i></i> EN VIVO</span>
+        </article>
+
+        <article class="bento-item bento-tandas reveal">
+          <img src="/images/app/tandas-demo.png" alt="Centro de tandas de Neni's App" />
+          <div>
+            <p>Tandas</p>
+            <h3>Cobros, turnos y atrasos en una sola mesa de control.</h3>
+          </div>
+        </article>
+
+        <article class="bento-item bento-clients reveal">
+          <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+          <div>
+            <p>Clientas VIP</p>
+            <h3>Reconoce a quienes siempre vuelven.</h3>
+          </div>
+        </article>
+
+        <article class="bento-item bento-routes reveal">
+          <span class="material-symbols-rounded" aria-hidden="true">route</span>
+          <div>
+            <p>Rutas y entregas</p>
+            <h3>De la bolsa lista a la puerta correcta.</h3>
+          </div>
+        </article>
       </section>
 
-      <section class="section modules" id="modulos">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Modulos integrados</p>
-          <h2>Todo conectado alrededor de tus ventas</h2>
-        </div>
-
-        <div class="module-grid">
-          <article class="module-card reveal">
-            <span class="icon">P</span>
-            <h3>Pedidos y folios</h3>
-            <p>Pedidos ilimitados, estados, busqueda, detalle y captura rapida.</p>
-          </article>
-          <article class="module-card reveal">
-            <span class="icon teal">C</span>
-            <h3>Clientas</h3>
-            <p>Historial, contacto, compras frecuentes y seguimiento por pedido.</p>
-          </article>
-          <article class="module-card reveal">
-            <span class="icon gold">R</span>
-            <h3>Rutas</h3>
-            <p>Entregas por zona, historial, pendientes y armado de reparto.</p>
-          </article>
-          <article class="module-card reveal">
-            <span class="icon ink">T</span>
-            <h3>Tandas y rifas</h3>
-            <p>Participantes, numeros, pagos, sorteos y control de entregas.</p>
-          </article>
-          <article class="module-card reveal">
-            <span class="icon coral">I</span>
-            <h3>Inventario</h3>
-            <p>Productos, existencias, variantes y publicaciones para tienda.</p>
-          </article>
-          <article class="module-card reveal">
-            <span class="icon green">E</span>
-            <h3>Etiquetas</h3>
-            <p>Impresion y diseno de etiquetas para preparar pedidos mas rapido.</p>
-          </article>
-          <article class="module-card reveal">
-            <span class="icon blue">M</span>
-            <h3>Metodos de pago</h3>
-            <p>Configura transferencias, efectivo y pagos para cerrar saldos.</p>
-          </article>
-          <article class="module-card reveal">
-            <span class="icon rose">V</span>
-            <h3>Ventas en vivo</h3>
-            <p>Organiza pedidos que nacen de lives, comentarios y apartados.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section proof-band">
-        <div class="proof-copy reveal">
-          <p class="eyebrow">Hecha para operar diario</p>
-          <h2>Menos captura repetida. Mas control del negocio.</h2>
-        </div>
-        <div class="proof-stats reveal">
-          <div><strong>1</strong><span>lugar para pedidos, pagos y rutas</span></div>
-          <div><strong>4</strong><span>pantallas clave para vender y entregar</span></div>
-          <div><strong>24/7</strong><span>tienda disponible para tus clientas</span></div>
-        </div>
-      </section>
-
-      <section class="section pricing" id="planes">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Planes</p>
-          <h2>Empieza simple y sube cuando el negocio crezca</h2>
+      <section class="pricing section-shell" id="pricing">
+        <div class="pricing-heading reveal">
+          <p class="eyebrow">Planes para crecer</p>
+          <h2>Empieza donde estás. Sube cuando lo necesites.</h2>
+          <p>Precios mensuales en MXN. Elige el control que hoy necesita tu negocio.</p>
         </div>
 
         <div class="pricing-grid">
           <article class="price-card reveal">
-            <p>Entrada</p>
-            <h3>$99 <span>/ mes</span></h3>
+            <div>
+              <p class="plan-name">Entrada</p>
+              <h3><sup>$</sup>99 <span>/ mes</span></h3>
+              <p class="plan-summary">Para ordenar tus primeras ventas.</p>
+            </div>
             <ul>
-              <li>Pedidos y clientas esenciales</li>
-              <li>Calendario de entregas</li>
-              <li>Tandas ilimitadas</li>
+              <li><span class="material-symbols-rounded">check</span>Pedidos y clientas esenciales</li>
+              <li><span class="material-symbols-rounded">check</span>Calendario de entregas</li>
+              <li><span class="material-symbols-rounded">check</span>Tandas ilimitadas</li>
             </ul>
-            <a class="btn secondary" href="#descargar">Empezar</a>
+            <a
+              class="button button-outline"
+              href="mailto:hola@nenisapp.com?subject=Quiero%20el%20plan%20Entrada"
+            >
+              Empezar
+            </a>
           </article>
-          <article class="price-card featured reveal">
-            <p>Pro</p>
-            <h3>$199 <span>/ mes</span></h3>
+
+          <article class="price-card price-featured reveal">
+            <span class="popular-label">El favorito</span>
+            <div>
+              <p class="plan-name">Pro</p>
+              <h3><sup>$</sup>199 <span>/ mes</span></h3>
+              <p class="plan-summary">Para una operación que ya se mueve.</p>
+            </div>
             <ul>
-              <li>Pedidos y clientas ilimitadas</li>
-              <li>Rutas, rifas y tienda publica</li>
-              <li>Reportes y metodos de pago</li>
+              <li><span class="material-symbols-rounded">check</span>Pedidos y clientas ilimitadas</li>
+              <li><span class="material-symbols-rounded">check</span>Rutas, rifas y tienda pública</li>
+              <li><span class="material-symbols-rounded">check</span>Reportes y métodos de pago</li>
             </ul>
-            <a class="btn primary" href="#descargar">Elegir Pro</a>
+            <a
+              class="button button-light"
+              href="mailto:hola@nenisapp.com?subject=Quiero%20el%20plan%20Pro"
+            >
+              Elegir Pro
+              <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+            </a>
           </article>
+
           <article class="price-card reveal">
-            <p>Elite</p>
-            <h3>$349 <span>/ mes</span></h3>
+            <div>
+              <p class="plan-name">Elite</p>
+              <h3><sup>$</sup>349 <span>/ mes</span></h3>
+              <p class="plan-summary">Para crecer con equipo y más control.</p>
+            </div>
             <ul>
-              <li>Todo Pro</li>
-              <li>Equipo, etiquetas e inventario avanzado</li>
-              <li>Soporte prioritario</li>
+              <li><span class="material-symbols-rounded">check</span>Todo lo incluido en Pro</li>
+              <li><span class="material-symbols-rounded">check</span>Equipo, etiquetas e inventario avanzado</li>
+              <li><span class="material-symbols-rounded">check</span>Soporte prioritario</li>
             </ul>
-            <a class="btn secondary" href="#descargar">Ver Elite</a>
+            <a
+              class="button button-outline"
+              href="mailto:hola@nenisapp.com?subject=Quiero%20el%20plan%20Elite"
+            >
+              Ver Elite
+            </a>
           </article>
         </div>
       </section>
 
-      <section class="final-cta">
-        <div class="final-inner reveal">
-          <h2>Tu negocio ya se mueve rapido. Tu app tambien deberia.</h2>
-          <p>Neni's App esta pensada para la operacion real de una vendedora: vender, cobrar, repartir y repetir sin perder informacion.</p>
-          <a class="btn primary" href="#inicio">Subir al inicio</a>
+      <section class="final-cta" id="download">
+        <div class="final-copy reveal">
+          <p class="eyebrow eyebrow-light">Tu siguiente live puede sentirse distinto</p>
+          <h2>Vende con emoción.<br />Administra con calma.</h2>
+          <p>
+            Dale a tu negocio una app que entiende lo que pasa antes,
+            durante y después de cada venta.
+          </p>
+          <a
+            class="button button-light button-large"
+            href="mailto:hola@nenisapp.com?subject=Quiero%20empezar%20con%20Neni%27s%20App"
+          >
+            Quiero empezar
+            <span class="material-symbols-rounded" aria-hidden="true">arrow_outward</span>
+          </a>
+        </div>
+        <div class="final-mark" aria-hidden="true">
+          <img src="/images/logo.png" alt="" />
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div>
-        <a class="brand footer-brand" href="#inicio">
+      <div class="footer-main">
+        <a class="site-brand footer-brand" href="#inicio">
           <img src="/images/logo.png" alt="" />
-          <span>Neni's App</span>
+          <span>Neni's<span>.</span></span>
         </a>
-        <p>Control real para ventas por redes.</p>
+        <p>El espacio donde vendedoras y clientas siguen conectadas.</p>
       </div>
-      <nav>
-        <a href="privacy.html">Privacidad</a>
-        <a href="terms.html">Terminos</a>
-        <a href="deletion.html">Eliminar datos</a>
-      </nav>
+      <div class="footer-column">
+        <p>Explora</p>
+        <a href="#features">La app</a>
+        <a href="#flujo">Cómo funciona</a>
+        <a href="#pricing">Planes</a>
+      </div>
+      <div class="footer-column">
+        <p>Legal</p>
+        <a href="/privacy.html">Privacidad</a>
+        <a href="/terms.html">Términos</a>
+        <a href="/deletion.html">Eliminar datos</a>
+      </div>
+      <div class="footer-column">
+        <p>Contacto</p>
+        <a href="mailto:hola@nenisapp.com">hola@nenisapp.com</a>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-current-year>2026</span> Neni's App</span>
+        <span>Hecha para negocios que venden con todo.</span>
+      </div>
     </footer>
 
     <script type="module" src="/src/main.js"></script>

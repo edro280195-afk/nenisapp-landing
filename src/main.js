@@ -4,6 +4,7 @@ const menuToggle = document.querySelector('[data-menu-toggle]');
 const screenButtons = document.querySelectorAll('[data-target-screen]');
 const screens = document.querySelectorAll('[data-screen]');
 const revealItems = document.querySelectorAll('.reveal');
+const currentYear = document.querySelector('[data-current-year]');
 
 function closeMenu() {
   document.body.classList.remove('menu-open');
@@ -30,26 +31,34 @@ screenButtons.forEach((button) => {
   button.addEventListener('click', () => {
     const target = button.dataset.targetScreen;
 
-    screenButtons.forEach((item) => item.classList.toggle('active', item === button));
+    screenButtons.forEach((item) => {
+      const isActive = item === button;
+      item.classList.toggle('active', isActive);
+      item.setAttribute('aria-selected', String(isActive));
+    });
     screens.forEach((screen) => {
       screen.classList.toggle('active', screen.dataset.screen === target);
     });
   });
 });
 
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.16, rootMargin: '0px 0px -80px 0px' },
-);
+if ('IntersectionObserver' in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12, rootMargin: '0px 0px -60px 0px' },
+  );
 
-revealItems.forEach((item) => revealObserver.observe(item));
+  revealItems.forEach((item) => revealObserver.observe(item));
+} else {
+  revealItems.forEach((item) => item.classList.add('is-visible'));
+}
 
 window.addEventListener('scroll', updateHeader, { passive: true });
 window.addEventListener('resize', () => {
@@ -59,3 +68,7 @@ window.addEventListener('resize', () => {
 });
 
 updateHeader();
+
+if (currentYear) {
+  currentYear.textContent = String(new Date().getFullYear());
+}
